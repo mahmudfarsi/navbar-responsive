@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" >
+    <meta name="author" content="" >
+    <meta name="keyword" content="html, css, javascript">
+    <meta http-equiv="refresh" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link rel="logo" type=“image/png” href="">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="media-query-max-930.css" media="only screen and (max-width:930px )">
+    <link rel="stylesheet" type="text/css" href="media-query-min-931.css" media="only screen and (min-width:931px )">
+    <script src="https://kit.fontawesome.com/f94c573a5a.js" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <!--brand-logo-->
+      <div class="brand">
+        <a href="javascript:void(0)" class="brand__logo">osilbrand</a>
+      </div>
+    </header>
+    <!--navigation-->
+    <nav id="navbar" class="navbar">
+      <!--box-btns-bar-->
+      <div id="openMenu" class="navbar__box__btns">
+       <!--btn-bar-->
+        <button type="button" id="btnBar" class="navbar__btn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <!--btn-close-bar-->
+        <button type="button" id="btnCloseBar" class="navbar__btn__close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <!--menu-desktop-->
+      <ul id="menu" class="navbar__menu">
+        <li class="active">
+          <a href="javacsript:void(0)">home</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">content</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">about</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">link</a>
+        </li>
+      </ul>
+      <!--menu-mobile-->
+      <ul id="menuMobile" class="navbar__menu__mobile">
+        <li class="active">
+          <a href="javascript:void(0)">home</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">content</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">about</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">link</a>
+        </li>
+      </ul>
+      <!--form-bar-->
+      <form action="" method="get" name="form" id="form" class="navbar__form">
+        <!--hidden-element-for-balance-->
+        <a href="javascript:void(0)" style="visibility: hidden;"></a>
+        <div class="navbar__form_box">
+          <input type="text" id="searchBar" class="navbar__form_box-input" placeholder="Search">
+          <button type="submit" class="navbar__form_box-btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <a href="javascript:void(0)" id="closeSearch" class="navbar__form-close">&#215;</a>
+      </form>
+      <!--btn-show-form-bar-->
+      <button id="searchBtn" class="navbar__search">
+        <i class="fa fa-search navbar__search-btn"></i>
+      </button>
+    </nav>
+
+
+
+
+
+    <script defer src="app.js"></script>
+  </body>
+</html>
+

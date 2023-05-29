@@ -1,0 +1,8 @@
+body .navbar .navbar__menu {
+  display: none;
+}
+
+
+body .navbar .navbar__box__btns .navbar__btn{
+  visibility: visible;
+}

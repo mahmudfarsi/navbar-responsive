@@ -1,0 +1,296 @@
+
+@import 'variables','functions';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Nanum+Gothic:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  direction: ltr;
+  width: 100%;
+  height: 3000px;
+  background: $body-color;
+
+
+
+  header{
+    width: 100%;
+    height: 150px;
+    padding-top: 60px;
+    background: $header-color;
+
+    .brand{
+      width: 100%;
+      text-align: center;
+      @include transition(.6s);
+
+
+      &:hover{
+        @include transform(scale(0.7));
+      }
+
+      .brand__logo{
+        color: $color-brand;
+        text-transform: uppercase;
+        font-size:$brand-size ;
+        font-family:$font-family-brand ;
+
+       
+      }
+    }
+  }
+
+
+
+  
+  .navbar{
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+    background:$nav-color ;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    position: relative;
+
+    
+    .navbar__box__btns{
+      position: relative;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+
+
+
+      .navbar__btn{
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 14pt;
+        color: $primary-color;
+        position: absolute;
+        cursor: pointer;
+        visibility: hidden;
+      }
+
+
+      .navbar__btn__close{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        left: 1px;
+        display: none;
+
+
+        .fa-xmark{
+          font-size: 14pt;
+          color: $primary-color;
+        }
+      }
+
+      .show_close{
+        display: block;
+      }
+    }
+    
+
+
+
+    
+
+
+    .navbar__menu{
+      height: 100%;
+      -webkit-flex-basis: 600px;
+      flex-basis: 600px;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: space-around;
+      justify-content: space-around;
+
+
+
+    }
+
+
+    .navbar__menu li{
+      padding: 15px;
+
+
+
+
+      
+    }
+
+
+    .navbar__menu a{
+      text-transform: capitalize;
+      font-family: $font-family-items;
+      font-size: $items-sizes;
+      color: $primary-color;
+
+
+      &:hover{
+        color: #0A686B;
+        filter: blur(.02rem);
+        
+      }
+    }
+
+
+    .navbar__menu__mobile{
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      height: 100vh;
+      padding: 30px;
+      background:$nav-color ;
+      position: absolute;
+      top: 100%;
+      right: 100%;
+      @include transition(.6s)
+      
+    }
+
+
+    .navbar__menu__mobile li{
+      padding: 10px;
+    }
+
+
+    .navbar__menu__mobile a{
+      text-transform: capitalize;
+      font-family: $font-family-items;
+      font-size:$items-sizes ;
+      color: $primary-color;
+
+
+
+      &:hover{
+        color: #0A686B;
+        filter: blur(.02rem);
+      }
+    }
+
+    .show_menu{
+      right: 0;
+    }
+
+
+
+    
+
+
+    .navbar__form{
+      width: 100%;
+      height: 50px;
+      padding: 0px 30px;
+      background-color: $header-color;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      position: absolute;
+      top: 0px;
+      right: 100%;
+      @include transition(.6s);
+
+
+      
+      
+     
+
+
+      .navbar__form_box{
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+
+
+
+
+        .navbar__form_box-input{
+          width: 200px;
+          height: 25px;
+          border: none;
+          padding: 0px 5px;
+          @include border-radius(10px, 0px, 0px, 10px);
+        }
+  
+  
+        .navbar__form_box-btn{
+          width: 20px;
+          height: 25px;
+          border: none;
+          background:$primary-color ;
+          cursor: pointer;
+          @include border-radius(0px ,10px, 10px, 0px);
+  
+          
+  
+          .fa-search{
+            font-size: 11pt;
+          }
+        }
+      }
+
+      
+
+
+      .navbar__form-close{
+        font-size: 13pt;
+        color: $primary-color;
+      }
+
+
+      
+
+
+      
+    }
+
+    
+
+
+    .navbar__search{
+      background: none;
+      border: none;
+      cursor: pointer;
+
+
+
+      .navbar__search-btn{
+        font-size: 12pt;
+        color: $primary-color;
+      }
+    }
+
+    .show_form{
+      right: 0;
+    }
+    
+  }
+  
+
+  .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  
+}
+
+
+
+
+

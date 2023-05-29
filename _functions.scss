@@ -1,0 +1,30 @@
+
+@mixin transform($property){
+  -webkit-transform:$property;
+  -moz-transform:$property;
+  -o-transform:$property;
+  transform:$property;
+}
+
+@mixin transition($property){
+  -webkit-transition:$property;
+  -moz-transition:$property;
+  -o-transition:$property;
+  transition: $property;
+}
+
+
+@mixin border-radius($left, $right, $bright, $bleft){
+  -webkit-border-radius:$left $right $bright $bleft;
+  -moz-border-radius:$left $right $bright $bleft;
+  -o-border-radius:$left $right $bright $bleft;
+  border-radius: $left $right $bright $bleft;
+}
+
+// @function sum($num...){
+//   $sum : 0px;
+//   @each $number in $num{
+//     $sum: $sum + $number;
+//   }
+//   @return $sum;
+// };
